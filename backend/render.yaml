@@ -1,0 +1,13 @@
+# Render.com deployment configuration
+# https://render.com/docs/deploy-node-express-app
+
+# Build command
+build:
+  - cd backend && npm install && npm run build
+
+# Start command
+start: cd backend && npm run start:prod
+
+# Environment variables (set in Render dashboard)
+# PORT: (auto-set by Render)
+# FRONTEND_URL: https://your-frontend.vercel.app
